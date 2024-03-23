@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const requestHandler = (res, req) => {
+const requestHandler = (req, res) => {
   let url = req.url;
   let method = req.method;
   fs.readFile("message.txt", (err, messages) => {
